@@ -38,7 +38,7 @@ Scarlet
 select name from students 
 inner join packages on  students.id= packages.id
 inner join friends on friends.id = students.id
-inner join packages as p on p1.id=friends.friend_id
+inner join packages as p on p.id=friends.friend_id
 where p.salary>packages.salary
 order by p.salary
  
